@@ -3,7 +3,7 @@ require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/activerecord'
 
-set :database, 'sqlite3:///blog.db'
+set :database, 'sqlite3:///locations.db'
  
 class Location < ActiveRecord::Base
 end
