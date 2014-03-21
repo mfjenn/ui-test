@@ -12,11 +12,20 @@ gem 'sinatra'
 gem 'rake'
 gem 'rack-test', '>= 0.5.6'
 
+gem 'sqlite3'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+
 group 'assets' do
   gem 'guard'
   gem 'guard-sass'
   gem 'guard-coffeescript'
   gem 'haml', '>= 3.0'
-  gem 'sass' if RUBY_VERSION < "2.0"
+  gem 'sass' if RUBY_VERSION < '2.0'
   gem 'coffee-script', '>= 2.0'
+end
+ 
+group :development do
+  gem 'shotgun'
+  gem 'tux'
 end
